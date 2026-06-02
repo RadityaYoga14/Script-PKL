@@ -1,0 +1,144 @@
+:root {
+    --bg: #0a0a0a;
+    --panel: #0f1b2d;
+    --panel-soft: #13243a;
+    --text: #eef7ff;
+    --muted: #a9bad0;
+    --line: rgba(238, 247, 255, 0.13);
+    --accent: #87CEEB;
+    --accent-dark: #3aa7cf;
+    --radius: 8px;
+    --shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
+}
+
+* {
+    scrollbar-width: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background:
+        radial-gradient(circle at 82% 4%, rgba(124, 153, 164, 0), transparent 28rem),
+        linear-gradient(rgba(135, 206, 235, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(135, 206, 235, 0.04) 1px, transparent 1px),
+        var(--bg);
+    background-size: auto, 44px 44px, 44px 44px, auto;
+    color: var(--text);
+    font-family: "Outfit", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--text);
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+p {
+    color: var(--muted);
+    line-height: 1.75;
+}
+
+a {
+    color: var(--muted);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+section {
+    position: relative;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    padding: 1rem 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+    backdrop-filter: blur(18px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .container {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .row {
+    align-items: center;
+}
+
+.navbar .col-md-4:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navbar a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    padding: 0.45rem 0.8rem;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    color: rgba(238, 247, 255, 0.72);
+    font-size: 0.9rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.navbar a:hover {
+    background: rgba(135, 206, 235, 0.1);
+    border-color: rgba(135, 206, 235, 0.24);
+    color: var(--accent);
+}
+
+.title {
+    min-height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+    padding: 7rem 0 6rem;
+}
+
+.title h1 {
+    max-width: 980px;
+    margin-inline: auto;
+    font-size: clamp(3rem, 9vw, 5.3rem);
+    line-height: 0.95;
+}
+
+.title h2 {
+    margin-top: 1.5rem;
+    color: var(--accent);
+    font-size: clamp(1.25rem, 3vw, 2.3rem);
+    font-weight: 800;
+}
+
+.title p {
+    margin-top: 0.8rem;
+    color: var(--text);
+    font-size: 1.1rem;
+    font-weight: 200;
+    opacity: 60%;
+}

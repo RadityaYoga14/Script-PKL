@@ -40,3 +40,6 @@ makeLink("#quiz-rpl", "/subbab/quiz-rpl.html");
 makeLink("#cashier-app", "/subbab/cashier-app.html");
 makeLink("#game-mario", "/subbab/game-mario.html");
 makeLink("#game-flappy", "/subbab/game-flappy.html");
+makeLink("#enviro-mas", "/projek/enviro-mas.html");
+makeLink("#rocky", "/projek/rocky.html");
+makeLink("#thichannel", "/projek/thichannel.html");
