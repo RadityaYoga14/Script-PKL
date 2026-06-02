@@ -130,7 +130,6 @@ section {
 
 .title h2 {
     margin-top: 1.5rem;
-    color: var(--accent);
     font-size: clamp(1.25rem, 3vw, 2.3rem);
     font-weight: 800;
 }
@@ -141,4 +140,16 @@ section {
     font-size: 1.1rem;
     font-weight: 200;
     opacity: 60%;
+}
+
+.title .enviro {
+    color: #056A44;
+}
+
+.title .rocky {
+    color: #ed1b24;
+}
+
+.title .thichannel {
+    color: #ffcd00;
 }

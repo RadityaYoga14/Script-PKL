@@ -114,6 +114,50 @@ section {
     color: var(--accent);
 }
 
+#title-quiz {
+    background:
+        linear-gradient(
+            rgba(10, 10, 10, 0.7),
+            rgba(10, 10, 10, 1)
+        ),
+        url("/gambar/gambar-quiz-app.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#title-cashier {
+    background:
+        linear-gradient(
+            rgba(10, 10, 10, 0.6),
+            rgba(10, 10, 10, 1)
+        ),
+        url("/gambar/gambar-cashier-app.png");
+    background-position: center;
+    background-size: cover;   
+}
+
+#title-mario {
+    background:
+        linear-gradient(
+            rgba(10, 10, 10, 0.6),
+            rgba(10, 10, 10, 1)
+        ),
+        url("/gambar/game-mario.png");
+    background-position: center;
+    background-size: cover;   
+}
+
+#title-flappy {
+    background:
+        linear-gradient(
+            rgba(10, 10, 10, 0.6),
+            rgba(10, 10, 10, 1)
+        ),
+        url("/gambar/game-flappy-bird.png");
+    background-position: center;
+    background-size: cover;
+}
+
 .title {
     min-height: calc(100vh - 72px);
     display: flex;
@@ -141,4 +185,12 @@ section {
     font-size: 1.1rem;
     font-weight: 200;
     opacity: 60%;
+}
+
+video {
+    width: 100%;
+}
+
+.description {
+    margin-bottom: 100px;
 }
