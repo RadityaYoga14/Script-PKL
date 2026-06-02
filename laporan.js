@@ -26,8 +26,17 @@ companyTabs.forEach((tab) => {
 
 setCompanyTab("ioa");
 
-const div = document.querySelector("quiz-rpl")
-div.style.cursor = "pointer";
-div.addEventListener("click", () => {
-    window.location.href = ""
-})
+function makeLink(selector, url) {
+    const el = document.querySelector(selector);
+    if (!el) return;
+
+    el.style.cursor = "pointer";
+    el.addEventListener("click", () => {
+        window.location.href = url;
+    })
+}
+
+makeLink("#quiz-rpl", "/subbab/quiz-rpl.html");
+makeLink("#cashier-app", "/subbab/cashier-app.html");
+makeLink("#game-mario", "/subbab/game-mario.html");
+makeLink("#game-flappy", "/subbab/game-flappy.html");
