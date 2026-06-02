@@ -25,3 +25,9 @@ companyTabs.forEach((tab) => {
 });
 
 setCompanyTab("ioa");
+
+const div = document.querySelector("quiz-rpl")
+div.style.cursor = "pointer";
+div.addEventListener("click", () => {
+    window.location.href = ""
+})
