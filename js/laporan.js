@@ -43,3 +43,49 @@ makeLink("#game-flappy", "/subbab/game-flappy.html");
 makeLink("#enviro-mas", "/projek/enviro-mas.html");
 makeLink("#rocky", "/projek/rocky.html");
 makeLink("#thichannel", "/projek/thichannel.html");
+
+$('#slick-carousel').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
+// const hamburger = document.getElementById("hamburger");
+// const navMenu = document.getElementById("nav-menu");
+
+// if (hamburger && navMenu) {
+//     hamburger.addEventListener("click", () => {
+//         const isOpen = navMenu.classList.toggle("active");
+
+//         hamburger.classList.toggle("active", isOpen);
+//         hamburger.setAttribute("aria-expanded", String(isOpen));
+//     });
+
+//     navMenu.querySelectorAll("a").forEach((link) => {
+//         link.addEventListener("click", () => {
+//             navMenu.classList.remove("active");
+//             hamburger.classList.remove("active");
+//             hamburger.setAttribute("aria-expanded", "false");
+//         });
+//     });
+// }
