@@ -44,13 +44,6 @@ makeLink("#enviro-mas", "/projek/enviro-mas.html");
 makeLink("#rocky", "/projek/rocky.html");
 makeLink("#thichannel", "/projek/thichannel.html");
 
-$('.slider-projek-carousel').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-});
-
 // const hamburger = document.getElementById("hamburger");
 // const navMenu = document.getElementById("nav-menu");
 
@@ -70,3 +63,55 @@ $('.slider-projek-carousel').slick({
 //         });
 //     });
 // }
+
+$(document).ready(function(){
+    var $carousel = $('.slider-projek-carousel');
+
+    if (!$carousel.length || $carousel.hasClass('slick-initialized')) {
+        return;
+    }
+
+    var $slides = $carousel.children('.P-slide');
+
+    if ($slides.length > 0 && $slides.length < 50) {
+        var targetCount = 50;
+        var currentCount = $slides.length;
+
+        while (currentCount < targetCount) {
+            $slides.clone().addClass('P-slide-clone').appendTo($carousel);
+            currentCount += $slides.length;
+        }
+    }
+
+    $carousel.slick({
+        centerMode: true,
+        centerPadding: '260px',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: true,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 650,
+        cssEase: 'cubic-bezier(0.22, 1, 0.36, 1)',
+        focusOnSelect: true,
+        waitForAnimate: true,
+        prevArrow: '<button type="button" class="slick-prev-custom" aria-label="Previous">‹</button>',
+        nextArrow: '<button type="button" class="slick-next-custom" aria-label="Next">›</button>',
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    centerPadding: '160px'
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    centerPadding: '36px'
+                }
+            }
+        ]
+    });
+});
