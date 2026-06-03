@@ -97,8 +97,8 @@ $(document).ready(function(){
         cssEase: 'cubic-bezier(0.22, 1, 0.36, 1)',
         focusOnSelect: true,
         waitForAnimate: true,
-        prevArrow: '<button type="button" class="slick-prev-custom project-arrow" aria-label="Previous"><i class="fa-solid fa-arrow-left"></i></button>',
-        nextArrow: '<button type="button" class="slick-next-custom project-arrow" aria-label="Next"><i class="fa-solid fa-arrow-right"></i></button>',
+        prevArrow: '<button type="button" class="slick-prev-custom" aria-label="Previous"><i class="fa-solid fa-arrow-right fa-flip-horizontal" style="color: rgb(0, 0, 0);"></i></button>',
+        nextArrow: '<button type="button" class="slick-next-custom" aria-label="Next"><i class="fa-solid fa-arrow-right" style="color: rgb(0, 0, 0);"></i></button>',
         responsive: [
             {
                 breakpoint: 1200,
