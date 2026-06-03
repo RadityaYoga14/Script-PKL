@@ -202,7 +202,7 @@ section {
 #title-enviro {
     background:
         linear-gradient(
-            rgba(5, 106, 68, 0.6),
+            rgba(2, 43, 27, 0.6),
             rgba(10, 10, 10, 1)
         ),
         url("/gambar/enviro.png");
@@ -213,7 +213,7 @@ section {
 #title-rocky {
     background:
         linear-gradient(
-            rgba(237, 27, 36, 0.3),
+            rgba(49, 2, 5, 0.6),
             rgba(10, 10, 10, 1)
         ),
         url("/gambar/rocky-baru.png");
@@ -224,7 +224,7 @@ section {
 #title-thichannel {
     background:
         linear-gradient(
-            rgba(255, 205, 0, 0.6),
+            rgba(62, 50, 0, 0.6),
             rgba(10, 10, 10, 1)
         ),
         url("/gambar/thichannel.png");
