@@ -705,6 +705,15 @@ section {
     background: rgba(238, 247, 255, 0.92) !important;
     color: #07111f !important;
 
+    width: 52px !important;
+    height: 52px !important;
+    border-radius: 50% !important;
+    border: 0 !important;
+    background: #fff !important;
+    color: #0a0a0a !important;
+    font-size: 34px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
