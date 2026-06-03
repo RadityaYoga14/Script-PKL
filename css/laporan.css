@@ -696,7 +696,7 @@ section {
     position: absolute !important;
     top: 50% !important;
     transform: translateY(-50%) !important;
-    z-index: 50 !important;
+    z-index: 10 !important;
     width: 52px !important;
     height: 52px !important;
     border-radius: 50% !important;
