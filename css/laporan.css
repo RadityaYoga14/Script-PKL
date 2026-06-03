@@ -691,12 +691,20 @@ section {
     }
 }
 
-.project .slick-prev-custom,
-.project .slick-next-custom {
+.project .project-arrow {
     position: absolute !important;
     top: 50% !important;
     transform: translateY(-50%) !important;
     z-index: 10 !important;
+
+    width: 54px !important;
+    height: 54px !important;
+    border-radius: 999px !important;
+    border: 1px solid rgba(238, 247, 255, 0.24) !important;
+
+    background: rgba(238, 247, 255, 0.92) !important;
+    color: #07111f !important;
+
     width: 52px !important;
     height: 52px !important;
     border-radius: 50% !important;
@@ -709,9 +717,24 @@ section {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+
     cursor: pointer !important;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.25) !important;
     padding: 0 !important;
+    outline: none !important;
+
+    box-shadow:
+        0 16px 42px rgba(0, 0, 0, 0.34),
+        inset 0 1px 0 rgba(255, 255, 255, 0.75) !important;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    transition:
+        transform 0.22s ease,
+        background 0.22s ease,
+        color 0.22s ease,
+        border-color 0.22s ease,
+        box-shadow 0.22s ease !important;
 }
 
 .project .slick-prev-custom {
@@ -722,8 +745,50 @@ section {
     right: 32px !important;
 }
 
-.project .slick-prev-custom:hover,
-.project .slick-next-custom:hover {
+.project .project-arrow i {
+    font-size: 17px;
+    line-height: 1;
+    color: currentColor !important;
+    transition: transform 0.22s ease;
+}
+
+.project .project-arrow:hover {
+    transform: translateY(-50%) scale(1.06) !important;
     background: var(--accent) !important;
     color: var(--bg) !important;
+    border-color: rgba(135, 206, 235, 0.9) !important;
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.42),
+        0 0 0 6px rgba(135, 206, 235, 0.12) !important;
+}
+
+.project .slick-prev-custom:hover i {
+    transform: translateX(-2px);
+}
+
+.project .slick-next-custom:hover i {
+    transform: translateX(2px);
+}
+
+.project .project-arrow:active {
+    transform: translateY(-50%) scale(0.98) !important;
+}
+
+@media (max-width: 768px) {
+    .project .project-arrow {
+        width: 44px !important;
+        height: 44px !important;
+    }
+
+    .project .slick-prev-custom {
+        left: 10px !important;
+    }
+
+    .project .slick-next-custom {
+        right: 10px !important;
+    }
+
+    .project .project-arrow i {
+        font-size: 14px;
+    }
 }
