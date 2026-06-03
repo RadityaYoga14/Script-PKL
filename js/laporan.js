@@ -44,7 +44,7 @@ makeLink("#enviro-mas", "/projek/enviro-mas.html");
 makeLink("#rocky", "/projek/rocky.html");
 makeLink("#thichannel", "/projek/thichannel.html");
 
-$('.autoplay').slick({
+$('.slider-projek-carousel').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
