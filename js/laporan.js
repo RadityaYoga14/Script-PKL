@@ -36,33 +36,13 @@ function makeLink(selector, url) {
     })
 }
 
-makeLink("#quiz-rpl", "/subbab/quiz-rpl.html");
-makeLink("#cashier-app", "/subbab/cashier-app.html");
-makeLink("#game-mario", "/subbab/game-mario.html");
-makeLink("#game-flappy", "/subbab/game-flappy.html");
-makeLink("#enviro-mas", "/projek/enviro-mas.html");
-makeLink("#rocky", "/projek/rocky.html");
-makeLink("#thichannel", "/projek/thichannel.html");
-
-// const hamburger = document.getElementById("hamburger");
-// const navMenu = document.getElementById("nav-menu");
-
-// if (hamburger && navMenu) {
-//     hamburger.addEventListener("click", () => {
-//         const isOpen = navMenu.classList.toggle("active");
-
-//         hamburger.classList.toggle("active", isOpen);
-//         hamburger.setAttribute("aria-expanded", String(isOpen));
-//     });
-
-//     navMenu.querySelectorAll("a").forEach((link) => {
-//         link.addEventListener("click", () => {
-//             navMenu.classList.remove("active");
-//             hamburger.classList.remove("active");
-//             hamburger.setAttribute("aria-expanded", "false");
-//         });
-//     });
-// }
+makeLink("#quiz-rpl", "subbab/quiz-rpl.html");
+makeLink("#cashier-app", "subbab/cashier-app.html");
+makeLink("#game-mario", "subbab/game-mario.html");
+makeLink("#game-flappy", "subbab/game-flappy.html");
+makeLink("#enviro-mas", "projek/enviro-mas.html");
+makeLink("#rocky", "projek/rocky.html");
+makeLink("#thichannel", "projek/thichannel.html");
 
 $(document).ready(function(){
     var $carousel = $('.slider-projek-carousel');
