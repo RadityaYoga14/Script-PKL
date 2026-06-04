@@ -160,7 +160,7 @@ section {
             rgba(10, 10, 10, 0.7),
             rgba(10, 10, 10, 1)
         ),
-        url("/gambar/gambar-quiz-app.png");
+        url("../gambar/gambar-quiz-app.png");
     background-position: center;
     background-size: cover;
 }
@@ -171,7 +171,7 @@ section {
             rgba(10, 10, 10, 0.6),
             rgba(10, 10, 10, 1)
         ),
-        url("/gambar/gambar-cashier-app.png");
+        url("../gambar/gambar-cashier-app.png");
     background-position: center;
     background-size: cover;   
 }
@@ -182,7 +182,7 @@ section {
             rgba(10, 10, 10, 0.6),
             rgba(10, 10, 10, 1)
         ),
-        url("/gambar/game-mario.png");
+        url("../gambar/game-mario.png");
     background-position: center;
     background-size: cover;   
 }
@@ -193,7 +193,7 @@ section {
             rgba(10, 10, 10, 0.6),
             rgba(10, 10, 10, 1)
         ),
-        url("/gambar/game-flappy-bird.png");
+        url("../gambar/game-flappy-bird.png");
     background-position: center;
     background-size: cover;
 }
