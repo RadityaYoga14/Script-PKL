@@ -47,6 +47,7 @@ makeLink("#bootstrap", "https://getbootstrap.com/")
 makeLink("#slick", "https://kenwheeler.github.io/slick/")
 makeLink("#figma", "https://figma.com/")
 makeLink("#wordpress", "https://wordpress.com/id/")
+makeLink("#alamaya", "https://alamaya.com/")
 
 $(document).ready(function(){
     var $carousel = $('.slider-projek-carousel');
