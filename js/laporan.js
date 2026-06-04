@@ -43,6 +43,10 @@ makeLink("#game-flappy", "subbab/game-flappy.html");
 makeLink("#enviro-mas", "projek/enviro-mas.html");
 makeLink("#rocky", "projek/rocky.html");
 makeLink("#thichannel", "projek/thichannel.html");
+makeLink("#bootstrap", "https://getbootstrap.com/")
+makeLink("#slick", "https://kenwheeler.github.io/slick/")
+makeLink("#figma", "https://figma.com/")
+makeLink("#wordpress", "https://wordpress.com/id/")
 
 $(document).ready(function(){
     var $carousel = $('.slider-projek-carousel');
@@ -72,7 +76,7 @@ $(document).ready(function(){
         arrows: true,
         dots: false,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2500,
         speed: 650,
         cssEase: 'cubic-bezier(0.22, 1, 0.36, 1)',
         focusOnSelect: true,
