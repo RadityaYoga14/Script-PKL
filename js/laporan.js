@@ -77,7 +77,7 @@ $(document).ready(function(){
         arrows: true,
         dots: false,
         autoplay: true,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 2000,
         speed: 650,
         cssEase: 'cubic-bezier(0.22, 1, 0.36, 1)',
         focusOnSelect: true,
